@@ -2,13 +2,19 @@
 This project aims to develop a machine learning model that can accurately classify emails as either spam or non-spam.
 
 ## Data
-The dataset used for this project contains a collection of emails labeled as either "spam" or "non-spam". The dataset can be found at [insert link].
+The dataset used for this project contains a collection of emails labeled as either "spam" or "non-spam". The dataset can be found at [http://archive.ics.uci.edu/ml/datasets/Spambase]. File “spambase.data” contains the actual data, and files “spambase.names” and “spambase.DOCUMENTATION” contain the description of the data. This dataset has 4601 records, each record representing a different email message. Each record is described with  58  attributes  (indicated  in  the  aforementioned  .names  file):  attributes  1-57  represent  various  content-based characteristics already extracted from each email message (related to the frequency of certain words or certain punctuation symbols in a message as well as to the usage of capital letters in a message), and the last attribute represents the class label for each message (spam or non-spam).
 
 ## Requirements
 The following packages are required to run the code in this project:
 * numpy
 * pandas
 * scikit-learn
+* lightgbm
+* xgboost
+* scikitplot
+* matplotlib
+* seaborn
+
 
 ## Evaluation
 The model is evaluated using accuracy, precision, recall and F1-score metrics.
